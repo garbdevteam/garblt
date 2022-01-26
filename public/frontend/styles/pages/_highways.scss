@@ -1,0 +1,87 @@
+.highways-page {
+    background-color: $color-white-smoke;
+    padding-bottom: 2rem;
+
+    h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-tabs {
+        margin-top: 3rem;
+    }
+
+    .tab-content {
+        padding-top: 1rem;
+
+        .loads {
+
+            .load {
+                background-color: $color-white;
+                margin-top: 1.5rem;
+                padding: 2rem 1rem;
+                border-radius: 8px;
+    
+                img {
+                    width: 100%;
+                }
+    
+                h4 {
+                    font-weight: bold;
+                    margin-bottom: 1.5rem;
+                }
+    
+                p {
+                    margin-bottom: .5rem;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .stations {
+
+            .station {
+                padding: 2rem;
+                background-color: $color-white;
+                border-radius: 8px;
+                margin-top: 1rem;
+
+                h3, h5 {
+                    font-weight: bold;
+                }
+
+                .location {
+                    // font-weight: 600;
+                    font-size: 1.1rem;
+                    margin-top: 1rem;
+                }
+
+                .subscription,
+                .price {
+
+                    .type {
+                        margin-top: 1rem;
+
+                        .badge {
+                            font-weight: normal;
+                            font-size: 1rem;
+                            border: 1px solid #e8e8e8;
+                            padding: .7rem 1rem;
+
+                            &:not(:last-of-type) {
+                                margin-left: .5rem;
+                            }
+                        }
+                    }
+                }
+
+                .price {
+                    margin-top: 1rem;
+                }
+
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,101 @@
+.about-page {
+    background-color: $color-white-ghost;
+
+    .desc-part {
+        background-color: $color-white;
+        padding-bottom: 10rem;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 55% 98%, 45% 98%, 0% 90%);
+
+        .role {
+            margin-top: 4rem;
+    
+            h2 {
+                margin-bottom: 2rem;
+            }
+    
+            .content {
+                padding-right: 2rem;
+            }
+    
+            img {
+                width: 100%;
+                height: 200px;
+            }
+    
+            p {
+                font-size: 1.35rem;
+            }
+        }
+    
+        .word {
+            margin-top: 4rem;
+    
+            h2 {
+                margin-bottom: 2rem;
+            }
+    
+            h4 {
+                font-weight: bold;
+            }
+    
+            .content {
+                padding-right: 2rem;
+            }
+    
+            img {
+                width: 100%;
+                height: 230px;
+                border-radius: 6px;
+            }
+    
+            p {
+                font-size: 1.35rem;
+            }
+        }
+    }
+
+    .history {
+        margin-top: 4rem;
+    }
+
+    .leaders {
+        margin-top: 300px;
+
+        .boxes {
+            margin-top: 4rem;
+        }
+    }
+
+    .organization {
+        margin-top: 6rem;
+
+        .single-card {
+            background-color: $color-white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 350px;
+            padding: 1rem;
+            margin-top: 2rem;
+
+            img {
+                width: 8rem;
+                height: 8rem;
+                border-radius: 50%;
+                border: 1px solid $color-secondary;
+            }
+
+            h4 {
+                margin-top: 1rem;
+                font-weight: bold;
+            }
+
+            p {
+                margin-top: .5rem;
+            }
+        }
+    }
+
+}

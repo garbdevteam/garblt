@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>a {
+  position: relative;
+}
+
+.dropdown-submenu>a:after {
+  // content: "\f0da";
+  content: "";
+
+  background-image: url(../../images/icons/dropdown.svg);
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  transform: translateY(-50%) rotate(90deg);
+
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  
+  // transform: translateY(-50%);
+
+  // float: left;
+  border: none;
+  // font-family: 'FontAwesome';
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+}

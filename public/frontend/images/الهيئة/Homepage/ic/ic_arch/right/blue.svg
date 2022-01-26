@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic / ic_arch / right / blue</title>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-1292.000000, -2564.000000)" fill="#016599" fill-rule="nonzero" stroke="#016599">
+            <g id="Group-14" transform="translate(0.000000, 1965.000000)">
+                <g id="Group-11" transform="translate(41.000000, 58.000000)">
+                    <g id="Group-26" transform="translate(568.000000, 72.000000)">
+                        <g id="Group-10" transform="translate(678.000000, 454.000000)">
+                            <g id="Group" transform="translate(0.000000, 9.500000)">
+                                <g transform="translate(5.000000, 6.000000)">
+                                    <path d="M-0.77533644,3.20277223 C-1.05549517,2.93240926 -1.50972222,2.93240926 -1.78988095,3.20277223 C-2.07003968,3.4731352 -2.07003968,3.91148018 -1.78988095,4.18184316 L2.99272774,8.79722777 C3.27288647,9.06759074 3.72711353,9.06759074 4.00727226,8.79722777 L8.78988095,4.18184316 C9.07003968,3.91148018 9.07003968,3.4731352 8.78988095,3.20277223 C8.50972222,2.93240926 8.05549517,2.93240926 7.77533644,3.20277223 L3.5,7.32862138 L-0.77533644,3.20277223 Z" id="Shape" transform="translate(3.500000, 6.000000) scale(-1, 1) rotate(-90.000000) translate(-3.500000, -6.000000) "></path>
+                                    <line x1="2.17137862" y1="6" x2="13" y2="6" id="Path-2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

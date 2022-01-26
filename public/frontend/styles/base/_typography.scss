@@ -1,0 +1,32 @@
+/**
+ * Basic typography style for copy text
+ */
+
+ .heading {
+     font-weight: bold;
+ }
+
+ .more-link:link,
+ .more-link:visited{
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: 600;
+
+    img {
+        margin-right: 3px;
+        transition: all .3s;
+    }
+
+    &:hover {
+        img {
+            margin-right: 6px;
+        }
+    }
+ }
+
+.btn {
+
+    &:focus {
+        box-shadow: none;
+    }
+ }

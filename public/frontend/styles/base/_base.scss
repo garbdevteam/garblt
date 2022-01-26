@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+body {
+    font-family: 'Almarai', sans-serif;
+    color: #323333;
+}
+
+.container {
+    @media(min-width: 1200px) {
+        max-width: 1275px;
+    }
+}

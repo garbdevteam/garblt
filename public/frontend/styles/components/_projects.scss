@@ -1,0 +1,127 @@
+.projects {
+    min-height: 600px;
+    background-color: $color-white-smoke;
+    padding-top: 300px;
+    padding-bottom: 1rem;
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+
+    .slider {
+
+        .slide {
+            padding-bottom: 100px;
+
+            .project {
+
+                .images {
+                    display: flex;
+                    justify-content: flex-end;
+                    position: relative;
+
+                    img {
+                        border-radius: 6px;
+
+                        &:first-child {
+                            width: 90%;
+                            height: 280px;
+
+                            @media(max-width: 576px) {
+                                width: 100%;
+                            }
+
+                            // &:hover {
+                            //     position: relative;
+                            //     z-index: 5;
+                            // }
+                        }
+
+                        &:last-child {
+                            position: absolute;
+                            top: 55%;
+                            left: 40%;
+                            width: 300px;
+                            height: 200px;
+
+                            @media(max-width: 576px) {
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+                }
+
+                .desc {
+
+                    @media(max-width: 768px) {
+                        margin-top: 7rem;
+                    }
+
+                    h3 {
+                        font-weight: bold;
+                    }
+
+                    p {
+                        margin-top: 1.5rem;
+                        font-size: 1.2rem;
+                    }
+
+                    .more-link {
+
+                        img {
+                            display: inline;
+                        }
+                    }
+                }
+
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+        }
+
+        .slick-dots {
+            bottom: 50px;
+            left: 4.5%;
+            // right: -30px;
+            // display: flex;
+            // flex-direction: row-reverse;
+            // justify-content: flex-end;
+
+            li {
+                margin: 0;
+
+                button {
+
+                    &::before {
+                        font-size: 12px;
+                        color: $color-white;
+                        opacity: 1;
+                    }
+                }
+
+                &.slick-active {
+
+                    button {
+
+                        &::before {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}

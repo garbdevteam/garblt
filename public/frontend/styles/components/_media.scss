@@ -1,0 +1,26 @@
+.media {
+    padding-top: 4rem;
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+
+    .slider {
+        margin-top: 3rem;
+
+        .slide {
+            margin: 0 .5rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}

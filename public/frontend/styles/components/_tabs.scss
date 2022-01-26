@@ -1,0 +1,20 @@
+.nav-tabs {
+    border: none;
+
+    .nav-item {
+
+        .nav-link {
+            border: none;
+            padding: 1rem 2rem;
+            color: $color-secondary;
+            font-weight: bold;
+
+            &.active {
+                background-color: $color-primary;
+                color: $color-white;
+                border-radius: 30px;
+                font-weight: normal;
+            }
+        }
+    }
+}

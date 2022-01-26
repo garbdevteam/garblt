@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
+
+// 2. Vendors
+// @import
+//   'vendors/normalize';
+
+// 3. Base stuff
+@import "base/base", "base/fonts", "base/typography", "base/helpers";
+
+// 4. Layout-related sections
+@import "layout/header", "layout/footer", "layout/navbar", "layout/breadcrumb";
+
+// 5. Components
+@import 'components/tabs';
+
+@import 'components/countdown';
+@import 'components/welcome-slider';
+@import 'components/about';
+@import 'components//statistics';
+@import 'components/latest-news';
+@import 'components/int-map';
+@import 'components/services';
+@import 'components/projects';
+@import 'components/media';
+    //About
+@import 'components/leaders';
+@import 'components/history';
+
+// 6. Page-specific styles
+@import "pages/home";
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/tenders';
+@import 'pages/tenders-details';
+@import 'pages/bridges';
+@import 'pages/bridges-projects';
+@import 'pages/road-safety';
+@import 'pages/highways';
+@import 'pages/faq';
+@import 'pages/error';
+
+// 7. Themes
+@import "themes/default";

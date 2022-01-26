@@ -1,0 +1,41 @@
+body {
+    font-family: 'Almarai', sans-serif;
+}
+
+.counter {
+    width: 100vw;
+    height: 100vh;
+
+    /* background-image: url(../images/background.jpg); */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+                        url(frontend/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.counter .content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter .content .logo img {
+    height: 200px;
+}
+
+.counter .content .soon {
+    width: 350px;
+    height: 60px;
+    background-color: #FFF;
+    color: red;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

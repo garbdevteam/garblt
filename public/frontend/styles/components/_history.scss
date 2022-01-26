@@ -1,0 +1,160 @@
+.history {
+
+    .milestones {
+        margin-top: 250px;
+
+        @media(max-width: 992px) {
+            transform: rotate(-90deg);
+            margin-top: 400px;
+            margin-bottom: 1000px;
+        }
+
+        .circles-line {
+            padding: .3rem 3rem;
+            border-radius: 20px;
+            background-color: rgba(#6b84c2, .2);
+            position: relative;
+
+            @media(max-width: 992px) {
+                width: 1200px;
+            }
+
+            .dotted-line {
+                border-top: 7px dotted #6b84c2;
+            }
+
+            .circle {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &.milestone-circle-1 {
+                    right: 10%;
+                }
+
+                &.milestone-circle-2 {
+                    right: 20%;
+                }
+
+                &.milestone-circle-3 {
+                    right: 30%;
+                }
+
+                &.milestone-circle-4 {
+                    right: 40%;
+                }
+
+                &.milestone-circle-5 {
+                    right: 50%;
+                }
+
+                &.milestone-circle-6 {
+                    right: 60%;
+                }
+
+                &.milestone-circle-7 {
+                    right: 70%;
+                }
+
+                span {
+                    border-radius: 50%;
+                    display: inline-block;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &.circle-5 {
+                        width: 1rem;
+                        height: 1rem;
+                        background-color: $color-gold;
+                    }
+
+                    &.circle-4 {
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: $color-white;
+                    }
+
+                    &.circle-3 {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        background-color: $color-primary;
+                    }
+
+                    &.circle-2 {
+                        width: 2.8rem;
+                        height: 2.8rem;
+                        background-color: $color-gold;
+                    }
+
+                    &.circle-1 {
+                        width: 3.3rem;
+                        height: 3.3rem;
+                        background-color: $color-primary;
+                    }
+
+
+                }
+
+                .desc {
+                    position: absolute;
+                    right: 1rem;
+                    display: flex;
+                    min-width: 245px;
+
+                    &.up {
+                        transform: translateY(-100%);
+
+                        .arrow {
+                            
+                            img {
+                                transform: rotate(0deg);
+                            }
+
+                            .label {
+                                margin-bottom: .5rem;
+                            }
+                        }
+
+                        .text {
+                            margin-top: 5rem;
+                        }
+                    }
+
+                    .arrow {
+                        display: flex;
+                        flex-direction: column;
+                        // justify-content: center;
+                        align-items: center;
+
+                        img {
+                            height: 150px;
+                            transform: rotate(180deg);
+                        }
+
+                        .label {
+                            background-color: $color-gold;
+                            padding: .2rem 1.2rem;
+                            border-radius: 20px;
+                            color: $color-primary;
+                            font-weight: bold;
+                            font-size: 1.2rem;
+                            margin-top: .5rem;
+                        }
+                    }
+
+                    .text {
+                        margin-top: 2rem;
+
+                        p {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}

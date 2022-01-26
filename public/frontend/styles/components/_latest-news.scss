@@ -1,0 +1,118 @@
+.latest-news {
+    background-color: $color-white-smoke;
+    padding: 3.5rem 0 4rem 0;
+
+    .news-slider {
+        padding: 1.5rem;
+        background-color: $color-white;
+        border-radius: 6px;
+        margin-top: 1.5rem;
+
+        .slider {
+
+            .slide {
+
+                > img {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 6px;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    margin-top: 1rem;
+                }
+
+                p {
+                    margin-top: 1rem;
+                    font-size: 1.1rem;
+                }
+
+                .more-link {
+                    display: inline-block;
+                    margin-top: 1rem;
+
+                    img {
+                        display: inline;
+                    }
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+            }
+
+            .slick-dots {
+                bottom: -100px;
+                right: -30px;
+                display: flex;
+                // flex-direction: row-reverse;
+                // justify-content: flex-end;
+
+                li {
+                    margin: 0;
+
+                    button {
+
+                        &::before {
+                            font-size: 12px;
+                            color: $color-white;
+                            opacity: 1;
+                        }
+                    }
+
+                    &.slick-active {
+
+                        button {
+
+                            &::before {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .details {
+        margin-top: 1.5rem;
+
+        .single-news {
+            padding: 1.5rem;
+            background-color: $color-white;
+            border-radius: 6px;
+            display: flex;
+
+            &:not(:first-child) {
+                margin-top: .5rem;
+            }
+
+            img {
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                border-radius: 6px;
+                margin-left: .8rem;
+            }
+
+            .info {
+                
+                h4 {
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+
+}

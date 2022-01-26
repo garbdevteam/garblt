@@ -1,0 +1,50 @@
+.faq-page {
+    background-color: $color-white-ghost;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .accordion {
+        color: $color-secondary;
+
+        .question {
+            background-color: $color-white;
+            margin-top: 1rem;
+            padding: 2rem 1.5rem;
+            border-radius: 8px;
+
+            .head {
+
+                .btn {
+                    color: $color-secondary;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    padding: 0;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &:focus,
+                    &:hover {
+                        text-decoration: none;
+                    }
+
+                    img {
+                        width: 1rem;
+                    }
+                }
+            }
+
+            .content {
+                margin-top: 1rem;
+                font-size: 1.1rem;
+            }
+
+        }
+    }
+
+}
+
+.rotate {
+    transform: rotate(180deg);
+}

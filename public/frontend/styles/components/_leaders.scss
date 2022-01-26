@@ -1,0 +1,149 @@
+.leaders {
+
+    .boxes {
+
+        @media(max-width: 992px) {
+            transform: scale(.5);
+        }
+
+        .box {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid $color-secondary;
+            border-radius: 4px;
+            display: flex;
+            position: relative;
+
+            img {
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .desc {
+                margin-right: 1rem;
+
+                p {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    // margin-bottom: .4rem;
+                }
+    
+                span {
+                    font-size: .9rem;
+                }
+            }
+
+            &.bottom-line::after {
+                content: "";
+                width: 1px;
+                height: 3rem;
+                background-color: $color-secondary;
+
+                position: absolute;
+                top: 100%;
+                left: 50%;
+            }
+
+            &.up-line::before {
+                content: "";
+                width: 1px;
+                height: 3rem;
+                background-color: $color-secondary;
+
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+            }
+
+        }
+
+        .level {
+
+            &.level-1 {
+                
+                .box {
+                    margin: 0 auto;
+                }
+            }
+
+            &.level-2 {
+                border-top: 1px solid $color-secondary;
+                margin: 0 auto;
+                margin-top: calc(3rem - 1px);
+                margin-bottom: calc(3rem - 5px);
+                width: 65%;
+                position: relative;
+                min-height: 185px;
+
+                .box {
+                    position: absolute;
+                    top: calc(3rem - 2px);
+                    transform: translateX(50%);
+
+                    &.box-1 {
+                        right: 0;
+                    }
+
+                    &.box-2 {
+                        right: 30%;
+                    }
+
+                    &.box-3 {
+                        right: 70%;
+                    }
+
+                    &.box-4 {
+                        right: 100%;
+                    }
+                }
+                
+            }
+
+            &.level-3 {
+                margin: 0 auto;
+                width: 65%;
+                min-height: 100px;
+                position: relative;
+
+                .box-group {
+                    display: flex;
+                    position: absolute;
+                    transform: translateX(50%);
+
+                    &::before {
+                        content: "";
+                        width: 52.2%;
+                        height: 1px;
+                        background-color: $color-secondary;
+
+                        position: absolute;
+                        top: -3rem;
+                        right: 99px;
+                    }
+
+                    .box {
+                        
+                        &.box-1 {
+                            margin-left: 1rem;
+                        }
+                    }
+
+                    &.group-1 {
+                        right: 0;
+                    }
+
+                    &.group-2 {
+                        right: 70%;
+                    }
+
+                }
+
+            }
+        }
+
+
+    }
+
+}

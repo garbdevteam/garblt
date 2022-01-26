@@ -1,0 +1,35 @@
+.contact-page {
+    background-color: $color-white-ghost;
+    padding: 4rem 0;
+
+    .contact-form {
+        padding: 1.5rem;
+        background-color: $color-white;
+        margin-top: 2rem;
+        border-radius: 6px;
+
+        label {
+            font-weight: bold;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: $color-gray;
+            font-size: 1.1rem;
+        }
+
+        .send-btn {
+            margin-top: 1rem;
+
+            .btn {
+                background-color: $color-primary;
+                color: $color-white;
+                width: 100%;
+                padding: 1rem 0;
+                border-radius: 50px;
+                font-weight: bold;
+            }
+        }
+    }
+
+}

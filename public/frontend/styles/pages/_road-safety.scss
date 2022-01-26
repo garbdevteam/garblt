@@ -1,0 +1,29 @@
+.road-safety {
+    background-color: $color-white-smoke;
+    padding-bottom: 2rem;
+
+    h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .signs {
+
+        .sign {
+            margin-top: 1rem;
+            background-color: $color-white;
+            padding: 1rem;
+            border-radius: 8px;
+
+            img {
+                height: 180px;
+            }
+
+            h5 {
+                margin-top: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+}

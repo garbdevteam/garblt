@@ -1,0 +1,112 @@
+.navbar {
+    // background-color: black;
+
+    .navbar-brand {
+        margin-left: 2rem;
+        
+        img {
+            height: 70px;
+        }
+    }
+
+    .nav-item {
+
+        &:not(:last-child) {
+            margin-left: .5rem;
+        }
+
+        &.active {
+            .nav-link {
+                color: $color-primary;
+                font-weight: bold;
+            }
+        }
+
+        .nav-link {
+            color: $color-secondary;
+
+            @media(max-width: 768px) {
+                display: flex;
+            }
+        }
+
+        .dropdown-item {
+            padding-left: 2rem;
+            padding-right: .5rem;
+            transition: padding .3s;
+
+            &:hover, 
+            &:focus {
+                // color: $color-primary;
+                // background-color: $color-white;
+                padding-right: 1rem;
+
+                background-color: $color-primary;
+                color: $color-white;
+                border-radius: 50px;
+            }
+
+            &:active,
+            &:link {
+                background-color: $color-white;
+                color: $color-secondary;
+            }
+        }
+
+        .dropdown-menu {
+            min-width: 14rem;
+
+            > li {
+                padding: 0 1rem;
+
+                &.dropdown-submenu {
+
+                    > .dropdown-item {
+
+                        &:hover, 
+                        &:focus {
+                            padding-right: 1rem;
+            
+                            background-color: $color-white;
+                            color: $color-primary;
+                            // border-radius: 50px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        > .dropdown-toggle {
+
+            &::after {
+                border: none;
+                background-image: url(../../images/icons/dropdown.svg);
+                width: 1rem;
+                height: 1rem;
+                background-repeat: no-repeat;
+                background-position: center;
+                vertical-align: middle;
+
+                @media(max-width: 768px) {
+                    margin-right: auto;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    .login {
+
+        @media(max-width: 768px) {
+            margin-top: 1rem;
+        }
+
+        .login-btn {
+            background-color: $color-primary;
+            color: $color-white;
+            padding: .75rem 2rem;
+            border-radius: 100px;
+        }
+    }
+}
